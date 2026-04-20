@@ -1,8 +1,13 @@
 function formatName(firstName, lastName) {
-  firstName = firstName.trim();
-  lastName = lastName.trim();
+  const trimmedFirst = firstName.trim();
+  const trimmedLast = lastName.trim();
 
-  return lastName + ", " + firstName;
+  const formattedFirst =
+    trimmedFirst.charAt(0).toUpperCase() + trimmedFirst.slice(1).toLowerCase();
+
+  const formattedLast = trimmedLast.toUpperCase();
+
+  return `${formattedLast}, ${formattedFirst}`;
 }
 
-console.log(formatName('  Akewusola ', '  Habeeb '));
+console.log(formatName('  esther  ', '  ogbu  '));
