@@ -10,4 +10,4 @@ function formatName(firstName, lastName) {
   return `${formattedLast}, ${formattedFirst}`;
 }
 
-console.log(formatName('  esther  ', '  ogbu  '));
+console.log(formatName('  esther  ', '  ogbu  ')); 
